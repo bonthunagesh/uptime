@@ -12,11 +12,12 @@ def step_impl(context):
 @when(u': user enters username and password')
 def step_impl(context):
     context.username = context.driver.find_element(By.ID, "username")
-    context.username.s
-
+    context.username.send_keys("alex")
 
     time.sleep(2)
-    context.password = context.driver.find_element(By.ID,"password").sendkeys("password")
+
+    context.password = context.driver.find_element(By.ID,"password")
+    context.password.send_keys("password")
     time.sleep(2)
 
 
@@ -24,9 +25,17 @@ def step_impl(context):
 def step_impl(context):
     context.Login = context.driver.find_element(By.ID,"loginButton")
     context.Login.click()
+    time.sleep(2)
+    context.title = context.driver.title
 
 @then(u': user should be able to Log in to the application')
 def step_impl(context):
-    print("")
+    time.sleep(2)
+
+    assert "My Portal" in context.title, f"Expected 'Dashboard' in title, but got: {context.title}"
+
+
+
+
 
 
