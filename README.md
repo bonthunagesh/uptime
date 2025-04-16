@@ -1,1 +1,1 @@
-New text for learning purtpouse
+THis POM based Project
