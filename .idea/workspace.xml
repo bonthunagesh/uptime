@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="152a9663-2ed4-4e68-a1fb-91b4cc80a8a6" name="Changes" comment="Login Testcase written // Nagesh">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="152a9663-2ed4-4e68-a1fb-91b4cc80a8a6" name="Changes" comment="First Login TEst case wih HTMl Reporting" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,7 +98,23 @@
       <option name="project" value="LOCAL" />
       <updated>1744787506823</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="First Login TEst case wih HTMl Reporting">
+      <option name="closed" value="true" />
+      <created>1744789379609</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1744789379609</updated>
+    </task>
+    <task id="LOCAL-00005" summary="First Login TEst case wih HTMl Reporting">
+      <option name="closed" value="true" />
+      <created>1744794669461</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1744794669461</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -117,6 +131,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="New Project" />
     <MESSAGE value="Login Testcase written // Nagesh" />
-    <option name="LAST_COMMIT_MESSAGE" value="Login Testcase written // Nagesh" />
+    <MESSAGE value="First Login TEst case wih HTMl Reporting" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Login TEst case wih HTMl Reporting" />
   </component>
 </project>
