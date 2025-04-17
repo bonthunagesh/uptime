@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="152a9663-2ed4-4e68-a1fb-91b4cc80a8a6" name="Changes" comment="CICD implemented for Uptime&#10;&#10;behave -t @Valid&#10;&#10;used it">
+    <list default="true" id="152a9663-2ed4-4e68-a1fb-91b4cc80a8a6" name="Changes" comment="CICD implemented for Uptime&#10;&#10;behave -t &quot;@Valid&quot;&#10;&#10;used it">
       <change beforePath="$PROJECT_DIR$/.github/workflows/bdd-tests.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/bdd-tests.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -278,7 +278,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744910401245</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="CICD implemented for Uptime&#10;&#10;behave -t &quot;@Valid&quot;&#10;&#10;used it">
+      <option name="closed" value="true" />
+      <created>1744910540154</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1744910540154</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -300,6 +308,7 @@
     <MESSAGE value="CICD Pipeline setup dne" />
     <MESSAGE value="CICD implemented for Uptime" />
     <MESSAGE value="CICD implemented for Uptime&#10;&#10;behave -t @Valid&#10;&#10;used it" />
-    <option name="LAST_COMMIT_MESSAGE" value="CICD implemented for Uptime&#10;&#10;behave -t @Valid&#10;&#10;used it" />
+    <MESSAGE value="CICD implemented for Uptime&#10;&#10;behave -t &quot;@Valid&quot;&#10;&#10;used it" />
+    <option name="LAST_COMMIT_MESSAGE" value="CICD implemented for Uptime&#10;&#10;behave -t &quot;@Valid&quot;&#10;&#10;used it" />
   </component>
 </project>
