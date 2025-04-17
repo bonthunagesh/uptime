@@ -8,7 +8,7 @@ on:
 
 jobs:
   generate-behave-report:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # Or ubuntu-22.04 if the issue persists
 
     steps:
       - name: Checkout code
@@ -19,7 +19,15 @@ jobs:
         with:
           python-version: 3.10
 
-      - name: Install dependencies and run tests
+      - name: Verify Python version
+        run: python --version  # Ensure Python 3.10 is correctly installed
+
+      - name: Install dependencies
         run: |
           pip install -r requirements.txt
-          behave -t Login
+
+      - name: Verify Behave installation
+        run: pip show behave  # Check if behave is installed
+
+      - name: Run Behave tests (with Login tag)
+        run: behave -t Login  # Running tests with Login tag, adjust as needed
