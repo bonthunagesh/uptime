@@ -177,7 +177,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744859931521</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="CICD Pipeline setup dne">
+      <option name="closed" value="true" />
+      <created>1744860154081</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1744860154081</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
