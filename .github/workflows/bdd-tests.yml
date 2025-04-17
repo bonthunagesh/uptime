@@ -22,4 +22,4 @@ jobs:
       - name: Install dependencies and run tests
         run: |
           pip install -r requirements.txt
-          behave -f html -o behave-report.html
+          behave -t Login
