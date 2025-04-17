@@ -23,13 +23,3 @@ jobs:
         run: |
           pip install -r requirements.txt
           behave -f html -o behave-report.html
-
-      - name: Check if report exists
-        run: |
-          if [ ! -f behave-report.html ]; then echo "Report file does not exist"; exit 1; fi
-
-      - name: Upload Behave HTML Report
-        uses: actions/upload-artifact@v3
-        with:
-          name: behave-html-report
-          path: behave-report.html
