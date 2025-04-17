@@ -24,8 +24,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Running Uptime Regressions with Login feature
-        run:  behave .\Login.feature
+      - name: Changing Directory
+        run:  CD Uptime_Automation\Features
+
+      - name: Running Feature
+        run: beahve Login.feature
+
 
 
 
