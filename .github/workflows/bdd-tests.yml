@@ -25,9 +25,3 @@ jobs:
 
       - name: Run Behave tests with HTML report
         run: behave -f html -o behave-report.html
-
-      - name: Upload the report (optional)
-        uses: actions/upload-artifact@v3
-        with:
-          name: behave-report
-          path: behave -t Login
