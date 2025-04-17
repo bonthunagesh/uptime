@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="152a9663-2ed4-4e68-a1fb-91b4cc80a8a6" name="Changes" comment="CICD implemented for Uptime" />
+    <list default="true" id="152a9663-2ed4-4e68-a1fb-91b4cc80a8a6" name="Changes" comment="CICD implemented for Uptime">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/bdd-tests.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/bdd-tests.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -260,7 +262,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744910007156</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="CICD implemented for Uptime">
+      <option name="closed" value="true" />
+      <created>1744910151391</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1744910151391</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
