@@ -1,6 +1,7 @@
 Feature: Login Scenario
 
 
+  @Valid
   Scenario: Verify that user is able to login to the appl with Valid {username} and {password}
 
     Given : User is on the Login page
