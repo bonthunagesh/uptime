@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="152a9663-2ed4-4e68-a1fb-91b4cc80a8a6" name="Changes" comment="First Login TEst case wih HTMl Reporting">
-      <change afterPath="$PROJECT_DIR$/Features/UIValidation.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Steps/UIvalidation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Steps/common_steps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Steps/invalid.py" afterDir="false" />
+    <list default="true" id="152a9663-2ed4-4e68-a1fb-91b4cc80a8a6" name="Changes" comment="UI Tcs added">
+      <change afterPath="$PROJECT_DIR$/Features/InvalidLogin.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/Features/Login.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Steps/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/Steps/login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Steps/invalid.py" beforeDir="false" afterPath="$PROJECT_DIR$/Steps/invalidLogin.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +124,23 @@
       <option name="project" value="LOCAL" />
       <updated>1744794669461</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="UI Tcs added">
+      <option name="closed" value="true" />
+      <created>1744810670008</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1744810670008</updated>
+    </task>
+    <task id="LOCAL-00007" summary="UI Tcs added">
+      <option name="closed" value="true" />
+      <created>1744810692022</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1744810692022</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -145,6 +158,7 @@
     <MESSAGE value="New Project" />
     <MESSAGE value="Login Testcase written // Nagesh" />
     <MESSAGE value="First Login TEst case wih HTMl Reporting" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Login TEst case wih HTMl Reporting" />
+    <MESSAGE value="UI Tcs added" />
+    <option name="LAST_COMMIT_MESSAGE" value="UI Tcs added" />
   </component>
 </project>
