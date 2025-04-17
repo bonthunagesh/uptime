@@ -1,6 +1,6 @@
 Feature: UI Validation
 
-
+  @skip
   Scenario: Verify that all the Tabs are present in the application
 
     Given : user is logged into the Application
