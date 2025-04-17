@@ -28,7 +28,7 @@ jobs:
         run:  CD Uptime_Automation\Features
 
       - name: Running Feature
-        run: beahve Login.feature
+        run: behave Login.feature
 
 
 
