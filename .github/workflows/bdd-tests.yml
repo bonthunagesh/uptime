@@ -2,9 +2,9 @@ name: Generate Behave HTML Report
 
 on:
   push:
-    branches: [ main ]
+    branches: [ CICD_pipeline ]
   pull_request:
-    branches: [ main ]
+    branches: [ CICD_pipeline ]
 
 jobs:
   generate-behave-report:
