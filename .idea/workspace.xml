@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="152a9663-2ed4-4e68-a1fb-91b4cc80a8a6" name="Changes" comment="CICD implemented for Uptime&#10;&#10;behave .\Login.feature">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/bdd-tests.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/bdd-tests.yml" afterDir="false" />
+    <list default="true" id="152a9663-2ed4-4e68-a1fb-91b4cc80a8a6" name="Changes" comment="CICD implemented for Uptime&#10;&#10;behave -t &quot;not @skip&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Features/UIValidation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/Features/UIValidation.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Steps/UIvalidation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Steps/UIvalidation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Steps/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/Steps/login.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -336,7 +337,23 @@
       <option name="project" value="LOCAL" />
       <updated>1744911270797</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="CICD implemented for Uptime&#10;&#10;behave -t &quot;not @skip&quot;">
+      <option name="closed" value="true" />
+      <created>1744911427218</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1744911427218</updated>
+    </task>
+    <task id="LOCAL-00033" summary="CICD implemented for Uptime&#10;&#10;behave -t &quot;not @skip&quot;">
+      <option name="closed" value="true" />
+      <created>1744911720136</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1744911720136</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -360,6 +377,7 @@
     <MESSAGE value="CICD implemented for Uptime&#10;&#10;behave -t @Valid&#10;&#10;used it" />
     <MESSAGE value="CICD implemented for Uptime&#10;&#10;behave -t &quot;@Valid&quot;&#10;&#10;used it" />
     <MESSAGE value="CICD implemented for Uptime&#10;&#10;behave .\Login.feature" />
-    <option name="LAST_COMMIT_MESSAGE" value="CICD implemented for Uptime&#10;&#10;behave .\Login.feature" />
+    <MESSAGE value="CICD implemented for Uptime&#10;&#10;behave -t &quot;not @skip&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="CICD implemented for Uptime&#10;&#10;behave -t &quot;not @skip&quot;" />
   </component>
 </project>

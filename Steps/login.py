@@ -23,6 +23,8 @@ def step_impl(context):
 
     assert "My Portal" in context.title, f"Expected 'Dashboard' in title, but got: {context.title}"
 
+    context.driver.quit()
+
 
 
 
