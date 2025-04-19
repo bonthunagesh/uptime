@@ -15,7 +15,7 @@ def step_impl(context):
 
     context.driver = webdriver.Chrome()
 
-    context.driver.get("http://in-ka-wag1np:9999/index.php?loggedout")
+    context.driver.get("http://localhost:9999/index.php?loggedout")
     time.sleep(4)
     context.username = context.driver.find_element(By.ID, "username")
     context.username.send_keys("nagesh")

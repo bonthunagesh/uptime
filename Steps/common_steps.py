@@ -8,7 +8,7 @@ from selenium.webdriver.common.by import By
 
 @given(u': User is on the Login page')
 def step_impl(context):
-    context.driver.get("http://in-ka-wag1np:9999/index.php?loggedout")
+    context.driver.get("http://localhost/:9999/index.php?loggedout")
     time.sleep(2)
 
 @when(u': Clicks on Login Button')
