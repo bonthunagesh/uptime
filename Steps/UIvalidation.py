@@ -18,13 +18,15 @@ def step_impl(context):
     context.driver.get("http://in-ka-wag1np:9999/index.php?loggedout")
     time.sleep(4)
     context.username = context.driver.find_element(By.ID, "username")
-    context.username.send_keys("alex")
+    context.username.send_keys("nagesh")
     context.password = context.driver.find_element(By.ID, "password")
-    context.password.send_keys("password")
+    context.password.send_keys("Alpha122@")
     time.sleep(2)
     context.Login = context.driver.find_element(By.ID, "loginButton")
     context.Login.click()
     time.sleep(2)
+
+
 
 # When: user clicks on Dashboards
 @when(u': user click on the Dashboards')
