@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="152a9663-2ed4-4e68-a1fb-91b4cc80a8a6" name="Changes" comment="self-hostedNew">
-      <change afterPath="$PROJECT_DIR$/Features/Check_license.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Steps/Check_license.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/Features/Login.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Steps/UIvalidation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Steps/UIvalidation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Steps/common_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/Steps/common_steps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Steps/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/Steps/login.py" afterDir="false" />
-    </list>
+    <list default="true" id="152a9663-2ed4-4e68-a1fb-91b4cc80a8a6" name="Changes" comment="3 Test cases done - Working fine(Assertion needs to updated for UI and License)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,12 +31,22 @@
     &quot;assignee&quot;: &quot;bonthunagesh&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/bonthunagesh/uptime&quot;,
-    &quot;accountId&quot;: &quot;b24ffa19-7e58-4e95-b980-b6bdb0734286&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/bonthunagesh/uptime",
+    "accountId": "b24ffa19-7e58-4e95-b980-b6bdb0734286"
+  },
+  "recentNewPullRequestHead": {
+    "server": {
+      "useHttp": false,
+      "host": "github.com",
+      "port": null,
+      "suffix": null
+    },
+    "owner": "bonthunagesh",
+    "repository": "uptime"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -64,7 +66,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "Third__testcase",
+    "git-widget-placeholder": "#2 on Third__testcase",
     "last_opened_file_path": "C:/Users/BonthuNageshRao/PycharmProjects/Uptime_Automation",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
@@ -466,7 +468,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745088704302</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="3 Test cases done - Working fine(Assertion needs to updated for UI and License)">
+      <option name="closed" value="true" />
+      <created>1745253702558</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1745253702558</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -496,6 +506,7 @@
     <MESSAGE value="Url updated to Localhost" />
     <MESSAGE value="self-hosted" />
     <MESSAGE value="self-hostedNew" />
-    <option name="LAST_COMMIT_MESSAGE" value="self-hostedNew" />
+    <MESSAGE value="3 Test cases done - Working fine(Assertion needs to updated for UI and License)" />
+    <option name="LAST_COMMIT_MESSAGE" value="3 Test cases done - Working fine(Assertion needs to updated for UI and License)" />
   </component>
 </project>
