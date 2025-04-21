@@ -1,0 +1,206 @@
+Index: Steps/UIvalidation.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import time\r\nimport os\r\nfrom selenium import webdriver\r\nfrom selenium.webdriver.common.by import By\r\nfrom selenium.webdriver.support.ui import WebDriverWait\r\nfrom selenium.webdriver.support import expected_conditions as EC\r\n\r\nos.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'  # Suppress TensorFlow INFO and WARNING\r\n\r\nfrom behave import given, when, then\r\n\r\n# Given: user is logged into the Application\r\n@given(u': user is logged into the Application')\r\ndef step_impl(context):\r\n\r\n    context.driver = webdriver.Chrome()\r\n\r\n    context.driver.get(\"http://localhost:9999/index.php?loggedout\")\r\n    time.sleep(4)\r\n    context.username = context.driver.find_element(By.ID, \"username\")\r\n    context.username.send_keys(\"nagesh\")\r\n    context.password = context.driver.find_element(By.ID, \"password\")\r\n    context.password.send_keys(\"Alpha122@\")\r\n    time.sleep(2)\r\n    context.Login = context.driver.find_element(By.ID, \"loginButton\")\r\n    context.Login.click()\r\n    time.sleep(2)\r\n\r\n\r\n\r\n# When: user clicks on Dashboards\r\n@when(u': user click on the Dashboards')\r\ndef step_impl(context):\r\n    Dashboard = WebDriverWait(context.driver, 10).until(\r\n        EC.element_to_be_clickable((By.XPATH, \"//button[@id='buttonDashboards-button']\"))\r\n    )\r\n    Dashboard.click()\r\n\r\n# Then: Dashboards page opens\r\n@then(u': Dashboards page open')\r\ndef step_impl(context):\r\n    try:\r\n        assert \"Uptime: Dashboards\" in context.driver.title, f\"Expected 'Uptime: Dashboards' in title, but got: {context.driver.title}\"\r\n    except Exception as e:\r\n        print(f\"[FAIL] Dashboards page check failed: {e}\")\r\n\r\n# When: user clicks on My_portal\r\n@when(u': user click on My_portal')\r\ndef step_impl(context):\r\n    my_portal = WebDriverWait(context.driver, 10).until(\r\n        EC.element_to_be_clickable((By.XPATH, \"//button[@id='buttonMyPortal-button']\"))\r\n    )\r\n    my_portal.click()\r\n\r\n# Then: My_portal page opens\r\n@then(u': My_portal page opens')\r\ndef step_impl(context):\r\n    try:\r\n        assert \"My Portal\" in context.driver.title, f\"Expected 'My Portal' in title, but got: {context.driver.title}\"\r\n    except Exception as e:\r\n        print(f\"[FAIL] My Portal page check failed: {e}\")\r\n\r\n# When: user clicks on Infrastructure\r\n@when(u': User clicks on Infrastructure')\r\ndef step_impl(context):\r\n    infra = WebDriverWait(context.driver, 10).until(\r\n        EC.element_to_be_clickable((By.XPATH, \"//button[@id='buttonMyInfrastructure-button']\"))\r\n    )\r\n    infra.click()\r\n\r\n# Then: Infrastructure page opens\r\n@then(u': Infrastructure page opens')\r\ndef step_impl(context):\r\n    try:\r\n        assert \"My Portal\" in context.driver.title, f\"Expected 'My Portal' in title, but got: {context.driver.title}\"\r\n    except Exception as e:\r\n        print(f\"[FAIL] Infrastructure page check failed: {e}\")\r\n\r\n# When: user clicks on Services Tab\r\n@when(u': User click on Services Tab')\r\ndef step_impl(context):\r\n    services = WebDriverWait(context.driver, 10).until(\r\n        EC.element_to_be_clickable((By.XPATH, \"//button[@id='buttonServices-button']\"))\r\n    )\r\n    services.click()\r\n\r\n# Then: Services page open\r\n@then(u': Services page open')\r\ndef step_impl(context):\r\n    try:\r\n        assert \"My Portal\" in context.driver.title, f\"Expected 'My Portal' in title, but got: {context.driver.title}\"\r\n    except Exception as e:\r\n        print(f\"[FAIL] Services page check failed: {e}\")\r\n\r\n# When: user clicks on Reports tab\r\n@when(u': User clicks on Reports tab')\r\ndef step_impl(context):\r\n    Reports = WebDriverWait(context.driver, 10).until(\r\n        EC.element_to_be_clickable((By.XPATH, \"//button[@id='buttonReports-button']\"))\r\n    )\r\n    Reports.click()\r\n\r\n# Then: Reports page opens\r\n@then(u': Reports page opens')\r\ndef step_impl(context):\r\n    try:\r\n        assert \"My Portal\" in context.driver.title, f\"Expected 'My Portal' in title, but got: {context.driver.title}\"\r\n    except Exception as e:\r\n        print(f\"[FAIL] Reports page check failed: {e}\")\r\n\r\n# When: user clicks on Config tab\r\n@when(u': User clicks on Config tab')\r\ndef step_impl(context):\r\n    config = WebDriverWait(context.driver, 10).until(\r\n        EC.element_to_be_clickable((By.XPATH, \"//button[@id='buttonConfig-button']\"))\r\n    )\r\n    config.click()\r\n\r\n# Then: Config page open\r\n@then(u': Config page open')\r\ndef step_impl(context):\r\n    try:\r\n        assert \"My Portal\" in context.driver.title, f\"Expected 'My Portal' in title, but got: {context.driver.title}\"\r\n    except Exception as e:\r\n        print(f\"[FAIL] Config page check failed: {e}\")\r\n\r\n# When: user clicks on Syslist Tab\r\n@when(u': user click on Syslist Tab')\r\ndef step_impl(context):\r\n    syslist = WebDriverWait(context.driver, 10).until(\r\n        EC.element_to_be_clickable((By.XPATH, \"//button[@id='buttonSyslist-button']\"))\r\n    )\r\n    syslist.click()\r\n\r\n# Then: Syslist page opens\r\n@then(u': Syslist page opens')\r\ndef step_impl(context):\r\n    try:\r\n        assert \"My Portal\" in context.driver.title, f\"Expected 'My Portal' in title, but got: {context.driver.title}\"\r\n    except Exception as e:\r\n        print(f\"[FAIL] Syslist page check failed: {e}\")\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Steps/UIvalidation.py b/Steps/UIvalidation.py
+--- a/Steps/UIvalidation.py	(revision 080494ed2d7465ff4c746f286f9c26ec4fdc3dcc)
++++ b/Steps/UIvalidation.py	(date 1745247932208)
+@@ -10,6 +10,8 @@
+ from behave import given, when, then
+ 
+ # Given: user is logged into the Application
++
++
+ @given(u': user is logged into the Application')
+ def step_impl(context):
+ 
+@@ -17,6 +19,7 @@
+ 
+     context.driver.get("http://localhost:9999/index.php?loggedout")
+     time.sleep(4)
++    context.driver.maximize_window()
+     context.username = context.driver.find_element(By.ID, "username")
+     context.username.send_keys("nagesh")
+     context.password = context.driver.find_element(By.ID, "password")
+Index: Steps/common_steps.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import time\r\n\r\nfrom behave import *\r\n\r\nfrom selenium import webdriver\r\nfrom selenium.webdriver.common.by import By\r\n\r\n\r\n@given(u': User is on the Login page')\r\ndef step_impl(context):\r\n    context.driver.get(\"http://localhost/:9999/index.php?loggedout\")\r\n    time.sleep(2)\r\n\r\n@when(u': Clicks on Login Button')\r\ndef step_impl(context):\r\n    context.Login = context.driver.find_element(By.ID,\"loginButton\")\r\n    context.Login.click()\r\n    time.sleep(2)\r\n\r\n\r\n    context.title = context.driver.title\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Steps/common_steps.py b/Steps/common_steps.py
+--- a/Steps/common_steps.py	(revision 080494ed2d7465ff4c746f286f9c26ec4fdc3dcc)
++++ b/Steps/common_steps.py	(date 1745247932218)
+@@ -6,16 +6,45 @@
+ from selenium.webdriver.common.by import By
+ 
+ 
++@given(u': user is logged into the Application')
++def step_impl(context):
++
++    context.driver = webdriver.Chrome()
++
++    context.driver.get("http://localhost:9999/index.php?loggedout")
++    time.sleep(4)
++    context.driver.maximize_window()
++    context.username = context.driver.find_element(By.ID, "username")
++    context.username.send_keys("nagesh")
++    context.password = context.driver.find_element(By.ID, "password")
++    context.password.send_keys("Alpha122@")
++    time.sleep(2)
++    context.Login = context.driver.find_element(By.ID, "loginButton")
++    context.Login.click()
++    time.sleep(2)
++
++
++
+ @given(u': User is on the Login page')
+ def step_impl(context):
+     context.driver.get("http://localhost/:9999/index.php?loggedout")
+     time.sleep(2)
++    context.driver.maximize_window()
++
+ 
+ @when(u': Clicks on Login Button')
+ def step_impl(context):
+     context.Login = context.driver.find_element(By.ID,"loginButton")
+     context.Login.click()
+     time.sleep(2)
++
++
++@given(u': User is logged into the application')
++def step_impl(context):
++    context.driver.get("http://localhost/:9999/index.php?loggedout")
++    time.sleep(2)
++    context.driver.maximize_window()
++
+ 
+ 
+     context.title = context.driver.title
+Index: .github/workflows/bdd-tests.yml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>name: Run Behave Tests\r\n\r\non:\r\n  push:\r\n    branches: [ master ]\r\n  pull_request:\r\n    branches: [ master  ]\r\n\r\njobs:\r\n  behave-tests:\r\n    runs-on: self-hosted\r\n\r\n    steps:\r\n      - name: Checkout Code\r\n        uses: actions/checkout@v3\r\n\r\n #    - name: Set Up Python\r\n ##       uses: actions/setup-python@v5\r\n #       with:\r\n #         python-version: '3.11'  # Use your Python version here\r\n\r\n    #  - name: Install Dependencies\r\n     #   run: |\r\n      #    python -m pip install --upgrade pip\r\n       # #  pip install -r requirements.txt\r\n      - name: Run Behave tests\r\n        shell: powershell\r\n        run: |\r\n          Set-ExecutionPolicy Bypass -Scope Process -Force\r\n          behave -f json -o Reports/report.json\r\n\r\n      - name: Running Feature\r\n        run: behave\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.github/workflows/bdd-tests.yml b/.github/workflows/bdd-tests.yml
+--- a/.github/workflows/bdd-tests.yml	(revision 080494ed2d7465ff4c746f286f9c26ec4fdc3dcc)
++++ b/.github/workflows/bdd-tests.yml	(date 1745247932227)
+@@ -8,7 +8,7 @@
+ 
+ jobs:
+   behave-tests:
+-    runs-on: self-hosted
++    runs-on: Windows
+ 
+     steps:
+       - name: Checkout Code
+Index: Steps/users_roles_group.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Steps/users_roles_group.py b/Steps/users_roles_group.py
+new file mode 100644
+--- /dev/null	(date 1745247932261)
++++ b/Steps/users_roles_group.py	(date 1745247932261)
+@@ -0,0 +1,6 @@
++
++from selenium import webdriver
++from selenium.webdriver.common.by import By
++from selenium.webdriver.support.ui import WebDriverWait
++from selenium.webdriver.support import expected_conditions as EC
++
+Index: Features/Add_infra.feature
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Features/Add_infra.feature b/Features/Add_infra.feature
+new file mode 100644
+--- /dev/null	(date 1745247932249)
++++ b/Features/Add_infra.feature	(date 1745247932249)
+@@ -0,0 +1,6 @@
++ Scenario: Verify that user is able to regsiter Local Infra
++    Given : User is Loggedin and is on Infra page
++    When : User clicks on ADD System
++    And : User enters all the required Systems details
++    And : user clicks on save button
++    Then : User should be able to save the Infra
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"152a9663-2ed4-4e68-a1fb-91b4cc80a8a6\" name=\"Changes\" comment=\"self-hostedNew\">\r\n      <change beforePath=\"$PROJECT_DIR$/.github/workflows/bdd-tests.yml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.github/workflows/bdd-tests.yml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Python Script\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"CICD_pipeline\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;bonthunagesh&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/bonthunagesh/uptime&quot;,\r\n    &quot;accountId&quot;: &quot;b24ffa19-7e58-4e95-b980-b6bdb0734286&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 3\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2vnTkYhL8gJ0HOKP7juaouts8KZ\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"ASKED_SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"Python.login.executor\": \"Run\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"SHARE_PROJECT_CONFIGURATION_FILES\": \"true\",\r\n    \"git-widget-placeholder\": \"master\",\r\n    \"last_opened_file_path\": \"C:/Users/BonthuNageshRao/PycharmProjects/Uptime_Automation\",\r\n    \"settings.editor.selected.configurable\": \"preferences.pluginManager\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\BonthuNageshRao\\PycharmProjects\\Uptime_Automation\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\BonthuNageshRao\\PycharmProjects\\Uptime_Automation\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-python-sdk-4f4e415b4190-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.26053.29\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"152a9663-2ed4-4e68-a1fb-91b4cc80a8a6\" name=\"Changes\" comment=\"\" />\r\n      <created>1744779982042</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1744779982042</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"New Project\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744780299482</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744780299482</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"New Project\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744784025457</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744784025457</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Login Testcase written // Nagesh\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744787506823</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744787506823</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"First Login TEst case wih HTMl Reporting\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744789379609</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744789379609</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"First Login TEst case wih HTMl Reporting\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744794669461</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744794669461</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"UI Tcs added\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744810670008</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744810670008</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"UI Tcs added\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744810692022</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744810692022</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"CICD Pipeline setup dne\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744858837964</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744858837964</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"CICD Pipeline setup dne\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744858910614</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744858910614</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"CICD Pipeline setup dne\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744859710100</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744859710100</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"CICD Pipeline setup dne\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744859788782</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744859788782</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"CICD Pipeline setup dne\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744859931521</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744859931521</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"CICD Pipeline setup dne\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744860154081</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744860154081</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\"CICD Pipeline setup dne\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744860218597</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744860218597</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00015\" summary=\"CICD Pipeline setup dne\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744860299516</created>\r\n      <option name=\"number\" value=\"00015\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744860299516</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00016\" summary=\"CICD Pipeline setup dne\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744860579808</created>\r\n      <option name=\"number\" value=\"00016\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744860579808</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00017\" summary=\"CICD Pipeline setup dne\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744860740441</created>\r\n      <option name=\"number\" value=\"00017\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00017\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744860740441</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00018\" summary=\"CICD Pipeline setup dne\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744860931094</created>\r\n      <option name=\"number\" value=\"00018\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00018\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744860931094</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00019\" summary=\"CICD Pipeline setup dne\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744861060812</created>\r\n      <option name=\"number\" value=\"00019\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00019\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744861060812</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00020\" summary=\"CICD Pipeline setup dne\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744865127325</created>\r\n      <option name=\"number\" value=\"00020\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00020\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744865127325</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00021\" summary=\"CICD Pipeline setup dne\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744865154023</created>\r\n      <option name=\"number\" value=\"00021\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00021\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744865154023</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00022\" summary=\"CICD implemented for Uptime\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744910007156</created>\r\n      <option name=\"number\" value=\"00022\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00022\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744910007156</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00023\" summary=\"CICD implemented for Uptime\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744910151391</created>\r\n      <option name=\"number\" value=\"00023\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00023\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744910151391</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00024\" summary=\"CICD implemented for Uptime&#10;&#10;behave -t @Valid&#10;&#10;used it\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744910401245</created>\r\n      <option name=\"number\" value=\"00024\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00024\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744910401245</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00025\" summary=\"CICD implemented for Uptime&#10;&#10;behave -t &quot;@Valid&quot;&#10;&#10;used it\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744910540154</created>\r\n      <option name=\"number\" value=\"00025\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00025\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744910540154</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00026\" summary=\"CICD implemented for Uptime&#10;&#10;behave -t &quot;@Valid&quot;&#10;&#10;used it\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744910822786</created>\r\n      <option name=\"number\" value=\"00026\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00026\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744910822786</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00027\" summary=\"CICD implemented for Uptime&#10;&#10;behave .\\Login.feature\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744910871270</created>\r\n      <option name=\"number\" value=\"00027\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00027\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744910871270</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00028\" summary=\"CICD implemented for Uptime&#10;&#10;behave .\\Login.feature\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744911055923</created>\r\n      <option name=\"number\" value=\"00028\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00028\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744911055923</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00029\" summary=\"CICD implemented for Uptime&#10;&#10;behave .\\Login.feature\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744911070219</created>\r\n      <option name=\"number\" value=\"00029\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00029\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744911070219</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00030\" summary=\"CICD implemented for Uptime&#10;&#10;behave .\\Login.feature\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744911173548</created>\r\n      <option name=\"number\" value=\"00030\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00030\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744911173548</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00031\" summary=\"CICD implemented for Uptime&#10;&#10;behave .\\Login.feature\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744911270797</created>\r\n      <option name=\"number\" value=\"00031\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00031\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744911270797</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00032\" summary=\"CICD implemented for Uptime&#10;&#10;behave -t &quot;not @skip&quot;\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744911427218</created>\r\n      <option name=\"number\" value=\"00032\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00032\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744911427218</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00033\" summary=\"CICD implemented for Uptime&#10;&#10;behave -t &quot;not @skip&quot;\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744911720136</created>\r\n      <option name=\"number\" value=\"00033\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00033\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744911720136</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00034\" summary=\"Written 2 Test cases\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744977774721</created>\r\n      <option name=\"number\" value=\"00034\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00034\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744977774721</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00035\" summary=\"Written 2 Test cases\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744978065346</created>\r\n      <option name=\"number\" value=\"00035\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00035\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744978065346</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00036\" summary=\"Written 2 Test cases\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1744978569939</created>\r\n      <option name=\"number\" value=\"00036\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00036\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1744978569939</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00037\" summary=\"password_updated\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745063753189</created>\r\n      <option name=\"number\" value=\"00037\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00037\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745063753190</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00038\" summary=\"password_updated\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745064597406</created>\r\n      <option name=\"number\" value=\"00038\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00038\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745064597406</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00039\" summary=\"Url updated to Localhost\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745065092012</created>\r\n      <option name=\"number\" value=\"00039\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00039\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745065092012</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00040\" summary=\"Url updated to Localhost\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745087787498</created>\r\n      <option name=\"number\" value=\"00040\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00040\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745087787498</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00041\" summary=\"self-hosted\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745087843573</created>\r\n      <option name=\"number\" value=\"00041\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00041\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745087843573</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00042\" summary=\"self-hosted\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745088635776</created>\r\n      <option name=\"number\" value=\"00042\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00042\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745088635776</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00043\" summary=\"self-hostedNew\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1745088704302</created>\r\n      <option name=\"number\" value=\"00043\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00043\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1745088704302</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"44\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"New Project\" />\r\n    <MESSAGE value=\"Login Testcase written // Nagesh\" />\r\n    <MESSAGE value=\"First Login TEst case wih HTMl Reporting\" />\r\n    <MESSAGE value=\"UI Tcs added\" />\r\n    <MESSAGE value=\"CICD Pipeline setup dne\" />\r\n    <MESSAGE value=\"CICD implemented for Uptime\" />\r\n    <MESSAGE value=\"CICD implemented for Uptime&#10;&#10;behave -t @Valid&#10;&#10;used it\" />\r\n    <MESSAGE value=\"CICD implemented for Uptime&#10;&#10;behave -t &quot;@Valid&quot;&#10;&#10;used it\" />\r\n    <MESSAGE value=\"CICD implemented for Uptime&#10;&#10;behave .\\Login.feature\" />\r\n    <MESSAGE value=\"CICD implemented for Uptime&#10;&#10;behave -t &quot;not @skip&quot;\" />\r\n    <MESSAGE value=\"Written 2 Test cases\" />\r\n    <MESSAGE value=\"password_updated\" />\r\n    <MESSAGE value=\"Url updated to Localhost\" />\r\n    <MESSAGE value=\"self-hosted\" />\r\n    <MESSAGE value=\"self-hostedNew\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"self-hostedNew\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 080494ed2d7465ff4c746f286f9c26ec4fdc3dcc)
++++ b/.idea/workspace.xml	(date 1745247932241)
+@@ -5,8 +5,12 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="152a9663-2ed4-4e68-a1fb-91b4cc80a8a6" name="Changes" comment="self-hostedNew">
++      <change afterPath="$PROJECT_DIR$/Features/users_roles_group.feature" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/Steps/users_roles_group.py" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.github/workflows/bdd-tests.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/bdd-tests.yml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Steps/UIvalidation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Steps/UIvalidation.py" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Steps/common_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/Steps/common_steps.py" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -51,18 +55,18 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "Python.login.executor": "Run",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "RunOnceActivity.git.unshallow": "true",
+-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+-    "git-widget-placeholder": "master",
+-    "last_opened_file_path": "C:/Users/BonthuNageshRao/PycharmProjects/Uptime_Automation",
+-    "settings.editor.selected.configurable": "preferences.pluginManager"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;Python.login.executor&quot;: &quot;Run&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
++    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/BonthuNageshRao/PycharmProjects/Uptime_Automation&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="C:\Users\BonthuNageshRao\PycharmProjects\Uptime_Automation" />
+@@ -431,7 +435,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1745088704302</updated>
+     </task>
+-    <option name="localTasksCounter" value="44" />
++    <task id="LOCAL-00044" summary="self-hostedNew">
++      <option name="closed" value="true" />
++      <created>1745089115695</created>
++      <option name="number" value="00044" />
++      <option name="presentableId" value="LOCAL-00044" />
++      <option name="project" value="LOCAL" />
++      <updated>1745089115695</updated>
++    </task>
++    <option name="localTasksCounter" value="45" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+diff --git a/Features/users_roles_group.feature b/Features/users_roles_group.feature
+new file mode 100644

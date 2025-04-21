@@ -14,6 +14,7 @@ from behave import given, when, then
 def step_impl(context):
 
     context.driver = webdriver.Chrome()
+    time.sleep(4)
 
     context.driver.get("http://localhost:9999/index.php?loggedout")
     time.sleep(4)
@@ -139,3 +140,4 @@ def step_impl(context):
         assert "My Portal" in context.driver.title, f"Expected 'My Portal' in title, but got: {context.driver.title}"
     except Exception as e:
         print(f"[FAIL] Syslist page check failed: {e}")
+    context.driver.quit()
