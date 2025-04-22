@@ -1,0 +1,56 @@
+2025-04-22 18:54:39,304 - INFO - Starting Given step: Logging in and navigating to Test Configuration
+2025-04-22 18:54:45,119 - INFO - Successfully logged in and navigated to Test Configuration
+2025-04-22 18:54:45,124 - INFO - Starting Given step: Logging in and navigating to Test Configuration
+2025-04-22 18:54:58,038 - ERROR - Error in Given step: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF6D5FC28E5+76565]
+	GetHandleVerifier [0x00007FF6D5FC2940+76656]
+	(No symbol) [0x00007FF6D5D88F6A]
+	(No symbol) [0x00007FF6D5DDF456]
+	(No symbol) [0x00007FF6D5DDF70C]
+	(No symbol) [0x00007FF6D5E32207]
+	(No symbol) [0x00007FF6D5E0735F]
+	(No symbol) [0x00007FF6D5E2F03F]
+	(No symbol) [0x00007FF6D5E070F3]
+	(No symbol) [0x00007FF6D5DD0421]
+	(No symbol) [0x00007FF6D5DD11B3]
+	GetHandleVerifier [0x00007FF6D628597D+2972589]
+	GetHandleVerifier [0x00007FF6D627FF42+2949490]
+	GetHandleVerifier [0x00007FF6D629E5A3+3074003]
+	GetHandleVerifier [0x00007FF6D5FDCD7A+184234]
+	GetHandleVerifier [0x00007FF6D5FE48FF+215855]
+	GetHandleVerifier [0x00007FF6D5FCB034+111204]
+	GetHandleVerifier [0x00007FF6D5FCB1E2+111634]
+	GetHandleVerifier [0x00007FF6D5FB12E9+5401]
+	BaseThreadInitThunk [0x00007FFB6997E8D7+23]
+	RtlUserThreadStart [0x00007FFB6AB314FC+44]
+
+2025-04-22 18:54:58,165 - INFO - Starting Given step: Logging in and navigating to Test Configuration
+2025-04-22 18:55:11,088 - ERROR - Error in Given step: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF6D5FC28E5+76565]
+	GetHandleVerifier [0x00007FF6D5FC2940+76656]
+	(No symbol) [0x00007FF6D5D88F6A]
+	(No symbol) [0x00007FF6D5DDF456]
+	(No symbol) [0x00007FF6D5DDF70C]
+	(No symbol) [0x00007FF6D5E32207]
+	(No symbol) [0x00007FF6D5E0735F]
+	(No symbol) [0x00007FF6D5E2F03F]
+	(No symbol) [0x00007FF6D5E070F3]
+	(No symbol) [0x00007FF6D5DD0421]
+	(No symbol) [0x00007FF6D5DD11B3]
+	GetHandleVerifier [0x00007FF6D628597D+2972589]
+	GetHandleVerifier [0x00007FF6D627FF42+2949490]
+	GetHandleVerifier [0x00007FF6D629E5A3+3074003]
+	GetHandleVerifier [0x00007FF6D5FDCD7A+184234]
+	GetHandleVerifier [0x00007FF6D5FE48FF+215855]
+	GetHandleVerifier [0x00007FF6D5FCB034+111204]
+	GetHandleVerifier [0x00007FF6D5FCB1E2+111634]
+	GetHandleVerifier [0x00007FF6D5FB12E9+5401]
+	BaseThreadInitThunk [0x00007FFB6997E8D7+23]
+	RtlUserThreadStart [0x00007FFB6AB314FC+44]
+
+2025-04-22 18:56:20,484 - INFO - Inside then step
+2025-04-22 18:56:21,062 - INFO - Actual status: 'Skipping test, the admin user is always authenticated against the Uptime Data Store'
+2025-04-22 18:58:00,489 - INFO - Inside then step
+2025-04-22 18:58:01,041 - INFO - Actual status: 'Skipping test, the admin user is always authenticated against the Uptime Data Store'
