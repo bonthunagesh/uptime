@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="152a9663-2ed4-4e68-a1fb-91b4cc80a8a6" name="Changes" comment="3 Test cases done - Working fine(Assertion needs to updated for UI and License)">
+      <change afterPath="$PROJECT_DIR$/Features/user_Authentication.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Steps/user_Authentication.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,6 +81,7 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\BonthuNageshRao\PycharmProjects\Uptime_Automation" />
+      <recent name="C:\Users\BonthuNageshRao\PycharmProjects\Uptime_Automation\Steps" />
     </key>
   </component>
   <component name="RunManager">
@@ -486,7 +489,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745253981015</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="3 Test cases done - Working fine(Assertion needs to updated for UI and License)">
+      <option name="closed" value="true" />
+      <created>1745254196791</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1745254196791</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -518,5 +529,21 @@
     <MESSAGE value="self-hostedNew" />
     <MESSAGE value="3 Test cases done - Working fine(Assertion needs to updated for UI and License)" />
     <option name="LAST_COMMIT_MESSAGE" value="3 Test cases done - Working fine(Assertion needs to updated for UI and License)" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Steps/user_Authentication.py</url>
+          <line>42</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Steps/user_Authentication.py</url>
+          <line>46</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
