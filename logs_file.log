@@ -1,7 +1,141 @@
-2025-04-22 18:23:14,930 - INFO - Inside then step
-2025-04-22 18:25:23,208 - INFO - Inside then step
-2025-04-22 18:25:23,749 - INFO - Actual status: 'Skipping test, the admin user is always authenticated against the Uptime Data Store'
-2025-04-22 18:32:19,350 - INFO - Inside then step
-2025-04-22 18:32:19,885 - INFO - Actual status: 'Skipping test, the admin user is always authenticated against the Uptime Data Store'
-2025-04-22 18:33:15,145 - INFO - Inside then step
-2025-04-22 18:33:15,698 - INFO - Actual status: 'Skipping test, the admin user is always authenticated against the Uptime Data Store'
+2025-04-22 18:54:39,304 - INFO - Starting Given step: Logging in and navigating to Test Configuration
+2025-04-22 18:54:45,119 - INFO - Successfully logged in and navigated to Test Configuration
+2025-04-22 18:54:45,124 - INFO - Starting Given step: Logging in and navigating to Test Configuration
+2025-04-22 18:54:58,038 - ERROR - Error in Given step: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF6D5FC28E5+76565]
+	GetHandleVerifier [0x00007FF6D5FC2940+76656]
+	(No symbol) [0x00007FF6D5D88F6A]
+	(No symbol) [0x00007FF6D5DDF456]
+	(No symbol) [0x00007FF6D5DDF70C]
+	(No symbol) [0x00007FF6D5E32207]
+	(No symbol) [0x00007FF6D5E0735F]
+	(No symbol) [0x00007FF6D5E2F03F]
+	(No symbol) [0x00007FF6D5E070F3]
+	(No symbol) [0x00007FF6D5DD0421]
+	(No symbol) [0x00007FF6D5DD11B3]
+	GetHandleVerifier [0x00007FF6D628597D+2972589]
+	GetHandleVerifier [0x00007FF6D627FF42+2949490]
+	GetHandleVerifier [0x00007FF6D629E5A3+3074003]
+	GetHandleVerifier [0x00007FF6D5FDCD7A+184234]
+	GetHandleVerifier [0x00007FF6D5FE48FF+215855]
+	GetHandleVerifier [0x00007FF6D5FCB034+111204]
+	GetHandleVerifier [0x00007FF6D5FCB1E2+111634]
+	GetHandleVerifier [0x00007FF6D5FB12E9+5401]
+	BaseThreadInitThunk [0x00007FFB6997E8D7+23]
+	RtlUserThreadStart [0x00007FFB6AB314FC+44]
+
+2025-04-22 18:54:58,165 - INFO - Starting Given step: Logging in and navigating to Test Configuration
+2025-04-22 18:55:11,088 - ERROR - Error in Given step: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF6D5FC28E5+76565]
+	GetHandleVerifier [0x00007FF6D5FC2940+76656]
+	(No symbol) [0x00007FF6D5D88F6A]
+	(No symbol) [0x00007FF6D5DDF456]
+	(No symbol) [0x00007FF6D5DDF70C]
+	(No symbol) [0x00007FF6D5E32207]
+	(No symbol) [0x00007FF6D5E0735F]
+	(No symbol) [0x00007FF6D5E2F03F]
+	(No symbol) [0x00007FF6D5E070F3]
+	(No symbol) [0x00007FF6D5DD0421]
+	(No symbol) [0x00007FF6D5DD11B3]
+	GetHandleVerifier [0x00007FF6D628597D+2972589]
+	GetHandleVerifier [0x00007FF6D627FF42+2949490]
+	GetHandleVerifier [0x00007FF6D629E5A3+3074003]
+	GetHandleVerifier [0x00007FF6D5FDCD7A+184234]
+	GetHandleVerifier [0x00007FF6D5FE48FF+215855]
+	GetHandleVerifier [0x00007FF6D5FCB034+111204]
+	GetHandleVerifier [0x00007FF6D5FCB1E2+111634]
+	GetHandleVerifier [0x00007FF6D5FB12E9+5401]
+	BaseThreadInitThunk [0x00007FFB6997E8D7+23]
+	RtlUserThreadStart [0x00007FFB6AB314FC+44]
+
+2025-04-22 18:56:20,484 - INFO - Inside then step
+2025-04-22 18:56:21,062 - INFO - Actual status: 'Skipping test, the admin user is always authenticated against the Uptime Data Store'
+2025-04-22 18:58:00,489 - INFO - Inside then step
+2025-04-22 18:58:01,041 - INFO - Actual status: 'Skipping test, the admin user is always authenticated against the Uptime Data Store'
+2025-04-22 19:08:10,622 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021C0BC65400>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/96ce9b6f1f2acdddb385c4c720553579
+2025-04-22 19:08:14,713 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021C0BBB3490>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/96ce9b6f1f2acdddb385c4c720553579
+2025-04-22 19:08:18,777 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000021C0BBB3A80>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/96ce9b6f1f2acdddb385c4c720553579
+2025-04-22 19:12:12,423 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000019F9E2E5400>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/08161591c28cd758364690fb3fc20853
+2025-04-22 19:12:16,514 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000019F9E233A80>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/08161591c28cd758364690fb3fc20853
+2025-04-22 19:12:20,608 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000019F9E233490>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/08161591c28cd758364690fb3fc20853
+2025-04-22 19:30:34,904 - INFO - Actual status: 'Authentication Status for user 'nagesh' using method Database:
+Failed.'
+2025-04-22 19:30:34,905 - ERROR - Validation failed: Expected message not found. Got: 'Authentication Status for user 'nagesh' using method Database:
+Failed.'
+2025-04-22 19:30:51,554 - INFO - Actual status: 'Skipping test, the admin user is always authenticated against the Uptime Data Store'
+2025-04-22 21:16:05,654 - INFO - Actual status: 'Authentication Status for user 'nagesh' using method Database:
+Passed.'
+2025-04-22 21:16:05,655 - ERROR - Validation failed: Expected message not found. Got: 'Authentication Status for user 'nagesh' using method Database:
+Passed.'
+2025-04-22 21:16:22,302 - INFO - Actual status: 'Skipping test, the admin user is always authenticated against the Uptime Data Store'
+2025-04-22 21:17:34,707 - INFO - Actual status: 'Authentication Status for user 'nagesh' using method Database:
+Passed.'
+2025-04-22 21:17:34,708 - ERROR - Validation failed: Expected message not found. Got: 'Authentication Status for user 'nagesh' using method Database:
+Passed.'
+2025-04-22 21:17:51,269 - INFO - Actual status: 'Skipping test, the admin user is always authenticated against the Uptime Data Store'
+2025-04-22 21:23:42,900 - INFO - Actual status: 'Authentication Status for user 'nagesh' using method Database:
+Passed.'
+2025-04-22 21:23:42,901 - ERROR - Validation failed: Expected message not found. Got: 'Authentication Status for user 'nagesh' using method Database:
+Passed.'
+2025-04-22 21:23:59,789 - INFO - Actual status: 'Skipping test, the admin user is always authenticated against the Uptime Data Store'
+2025-04-22 21:30:36,176 - INFO - Actual status: 'Authentication Status for user 'nagesh' using method Database:
+Passed.'
+2025-04-22 21:30:36,176 - ERROR - Validation failed: Expected message not found. Got: 'Authentication Status for user 'nagesh' using method Database:
+Passed.'
+2025-04-22 21:30:53,165 - INFO - Actual status: 'Skipping test, the admin user is always authenticated against the Uptime Data Store'
+2025-04-22 22:10:45,841 - INFO - Actual status: 'Authentication Status for user 'nagesh' using method Database:
+Passed.'
+2025-04-22 22:10:45,850 - ERROR - Validation failed: Expected message not found. Got: 'Authentication Status for user 'nagesh' using method Database:
+Passed.'
+2025-04-22 22:11:02,311 - INFO - Actual status: 'Skipping test, the admin user is always authenticated against the Uptime Data Store'
+2025-04-22 22:13:09,122 - INFO - Actual status: 'Authentication Status for user 'nagesh' using method Database:
+Passed.'
+2025-04-22 22:13:09,122 - ERROR - Validation failed: Expected message not found. Got: 'Authentication Status for user 'nagesh' using method Database:
+Passed.'
+2025-04-22 22:13:25,673 - INFO - Actual status: 'Skipping test, the admin user is always authenticated against the Uptime Data Store'
+2025-04-22 22:16:50,916 - INFO - Actual status: 'Authentication Status for user 'nagesh' using method Database:
+Passed.'
+2025-04-22 22:16:50,917 - ERROR - Validation failed: Expected message not found. Got: 'Authentication Status for user 'nagesh' using method Database:
+Passed.'
+2025-04-22 22:17:07,600 - INFO - Actual status: 'Skipping test, the admin user is always authenticated against the Uptime Data Store'
+2025-04-22 22:23:07,924 - INFO - Actual status: 'Authentication Status for user 'nagesh' using method Database:
+Passed.'
+2025-04-22 22:23:07,925 - ERROR - Validation failed: Expected message not found. Got: 'Authentication Status for user 'nagesh' using method Database:
+Passed.'
+2025-04-22 22:23:24,540 - INFO - Actual status: 'Skipping test, the admin user is always authenticated against the Uptime Data Store'
+2025-04-22 22:26:14,303 - INFO - Actual status: 'Authentication Status for user 'nagesh' using method Database:
+Passed.'
+2025-04-22 22:26:14,303 - ERROR - Validation failed: Expected message not found. Got: 'Authentication Status for user 'nagesh' using method Database:
+Passed.'
+2025-04-22 22:26:30,807 - INFO - Actual status: 'Skipping test, the admin user is always authenticated against the Uptime Data Store'
+2025-04-22 22:27:28,343 - INFO - Actual status: 'Authentication Status for user 'nagesh' using method Database:
+Failed.'
+2025-04-22 22:27:28,344 - ERROR - Validation failed: Expected message not found. Got: 'Authentication Status for user 'nagesh' using method Database:
+Failed.'
+2025-04-22 22:27:44,863 - INFO - Actual status: 'Skipping test, the admin user is always authenticated against the Uptime Data Store'
+2025-04-22 22:35:55,956 - INFO - Actual status: 'Authentication Status for user 'nagesh' using method Database:
+Failed.'
+2025-04-22 22:35:55,956 - INFO - Validation failed: 'failed' found in the message
+2025-04-22 22:35:55,956 - ERROR - Validation failed: Test failed: 'failed' detected in 'Authentication Status for user 'nagesh' using method Database:
+Failed.'
+2025-04-22 22:36:12,517 - INFO - Actual status: 'Skipping test, the admin user is always authenticated against the Uptime Data Store'
+2025-04-22 22:36:12,517 - WARNING - Validation unclear: Neither 'passed' nor 'failed' found in 'Skipping test, the admin user is always authenticated against the Uptime Data Store'
+2025-04-22 22:36:12,517 - ERROR - Validation failed: Unable to determine test status
+2025-04-22 22:36:57,968 - INFO - Actual status: 'Authentication Status for user 'nagesh' using method Database:
+Failed.'
+2025-04-22 22:36:57,968 - INFO - Validation failed: 'failed' found in the message
+2025-04-22 22:36:57,968 - ERROR - Validation failed: Test failed: 'failed' detected in 'Authentication Status for user 'nagesh' using method Database:
+Failed.'
+2025-04-22 22:37:14,862 - INFO - Actual status: 'Skipping test, the admin user is always authenticated against the Uptime Data Store'
+2025-04-22 22:37:14,862 - WARNING - Validation unclear: Neither 'passed' nor 'failed' found in 'Skipping test, the admin user is always authenticated against the Uptime Data Store'
+2025-04-22 22:37:14,862 - ERROR - Validation failed: Unable to determine test status
+2025-04-22 22:41:25,057 - INFO - Actual status: 'Authentication Status for user 'nagesh' using method Database:
+Failed.'
+2025-04-22 22:41:25,057 - INFO - Validation failed: 'failed' found in the message
+2025-04-22 22:41:25,057 - ERROR - Validation failed: Test failed: 'failed' detected in 'Authentication Status for user 'nagesh' using method Database:
+Failed.'
+2025-04-22 22:41:41,357 - INFO - Actual status: 'Skipping test, the admin user is always authenticated against the Uptime Data Store'
+2025-04-22 22:41:41,358 - WARNING - Validation unclear: Neither 'passed' nor 'failed' found in 'Skipping test, the admin user is always authenticated against the Uptime Data Store'
+2025-04-22 22:41:41,358 - ERROR - Validation failed: Unable to determine test status

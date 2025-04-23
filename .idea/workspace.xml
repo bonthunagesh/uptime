@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="152a9663-2ed4-4e68-a1fb-91b4cc80a8a6" name="Changes" comment="3 Test cases done - Working fine(Assertion needs to updated for UI and License)">
-      <change afterPath="$PROJECT_DIR$/Features/user_Authentication.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Steps/user_Authentication.py" afterDir="false" />
+    <list default="true" id="152a9663-2ed4-4e68-a1fb-91b4cc80a8a6" name="Changes" comment="4th Test case done">
+      <change afterPath="$PROJECT_DIR$/behave.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/Environment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Features/logs_file.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Features/user_Authentication.feature" beforeDir="false" afterPath="$PROJECT_DIR$/Features/user_Authentication.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Steps/user_Authentication.py" beforeDir="false" afterPath="$PROJECT_DIR$/Steps/user_Authentication.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/dde8ace2-a2b2-4c4e-b677-226d9d0458e3-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs_file.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs_file.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/inavlidreport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/report.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Third_testcase" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,7 +77,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "Third__testcase",
+    "git-widget-placeholder": "Fourth__testcase",
     "last_opened_file_path": "C:/Users/BonthuNageshRao/PycharmProjects/Uptime_Automation",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
@@ -80,6 +87,7 @@
       <recent name="C:\Users\BonthuNageshRao\PycharmProjects\Uptime_Automation" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\BonthuNageshRao\PycharmProjects\Uptime_Automation\HTML_reporting" />
       <recent name="C:\Users\BonthuNageshRao\PycharmProjects\Uptime_Automation" />
       <recent name="C:\Users\BonthuNageshRao\PycharmProjects\Uptime_Automation\Steps" />
     </key>
@@ -497,7 +505,23 @@
       <option name="project" value="LOCAL" />
       <updated>1745254196791</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="4th Test case done">
+      <option name="closed" value="true" />
+      <created>1745328601470</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1745328601470</updated>
+    </task>
+    <task id="LOCAL-00048" summary="4th Test case done">
+      <option name="closed" value="true" />
+      <created>1745328640021</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1745328640021</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -528,7 +552,8 @@
     <MESSAGE value="self-hosted" />
     <MESSAGE value="self-hostedNew" />
     <MESSAGE value="3 Test cases done - Working fine(Assertion needs to updated for UI and License)" />
-    <option name="LAST_COMMIT_MESSAGE" value="3 Test cases done - Working fine(Assertion needs to updated for UI and License)" />
+    <MESSAGE value="4th Test case done" />
+    <option name="LAST_COMMIT_MESSAGE" value="4th Test case done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

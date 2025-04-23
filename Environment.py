@@ -2,10 +2,10 @@ from selenium import webdriver
 
 
 
-def before_all(context):
-    #
-    context.driver = webdriver.Chrome()
+#def before_all(context):
 
-def after_all(context):
+        # context.driver = webdriver.Chrome()
 
-    context.driver.quit()
+#def after_all(context):
+
+    #context.driver.quit()
